@@ -1,0 +1,176 @@
+.congrats {
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--bgMain);
+    overflow: hidden;
+}
+
+.congrats-nav {
+    padding: 24px 128px 26px 127.576px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.congrats-main {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 108px);
+    align-items: center;
+    justify-content: center;
+}
+
+.congrats-div {
+    max-width: 649px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+}
+
+.congrats-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.congrats-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.congrats-onboarding,
+.whatsapp-para {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.8;
+}
+
+.whatsapp-para {
+    padding-bottom: 32px;
+}
+
+
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.congrats-top>svg {
+    padding-bottom: 14px;
+}
+
+.congrats-message {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 33.6px */
+}
+
+
+.congrats-whatsapp--btn {
+    border: none;
+    outline: none;
+    display: flex;
+    width: fit-content;
+    padding: 13px 46px;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    border-radius: 41px;
+    background: linear-gradient(87deg, #49D043 -0.56%, #FFB912 119.91%);
+    border-radius: 41px;
+    background: linear-gradient(87deg, #49D043 -0.56%, #FFB912 119.91%);
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    position: relative;
+    /* 32px */
+}
+
+.congrats-whatsapp--btn svg {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+}
+
+@media (width<1180px) {
+    .congrats-main {
+        padding: 64px 64px;
+
+    }
+
+    .congrats-nav {
+        padding: 24px 64px 26px 64px;
+    }
+}
+
+@media (width<980px) {
+    .congrats-main {
+        padding: 64px 32px;
+    }
+
+    .congrats-nav {
+        padding: 24px 32px 26px 32px;
+    }
+}
+
+@media (width<780px) {
+    .congrats-main {
+        padding: 64px 20px;
+    }
+
+    .congrats-nav {
+        padding: 24px 32px 26px 32px;
+    }
+
+    .congrats-onboarding,
+    .whatsapp-para {
+        font-size: 16px;
+
+    }
+
+    .congrats-message {
+        font-size: 24px;
+    }
+}
+
+@media (width<480px) {
+    .congrats-nav {
+        padding: 16px 16px 16px 16px;
+    }
+
+    .congrats-main {
+        padding: 64px 10px;
+    }
+
+    .congrats-whatsapp--btn {
+        font-size: 16px;
+        padding: 13px 17px;
+    }
+
+    .congrats-onboarding,
+    .whatsapp-para {
+        font-size: 14px;
+
+    }
+
+    .congrats-message {
+        font-size: 20px;
+    }
+}
